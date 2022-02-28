@@ -1,0 +1,256 @@
+/* *****************************************************************
+GENERALITES
+***************************************************************** */
+* {
+   box-sizing: border-box;
+   /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+   font-size: 62.5%;
+   /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+}
+
+body {
+   max-width: 1440px;
+   margin: auto;
+   font-family: 'Raleway', sans-serif;
+   color: black;
+}
+
+h1,
+h2,
+h3,
+nav {
+   font-family: 'Raleway', sans-serif;
+}
+
+h2 {
+   font-size: 18px;
+}
+
+a {
+   text-decoration: none;
+   font-size: 18px;
+}
+
+p {
+   font-size: 14px;
+}
+
+img {
+   max-width: 100%;
+   width: auto;
+   height: auto;
+}
+
+main {
+   padding: 20px;
+}
+
+::placeholder {
+   /* Chrome, Firefox, Opera, Safari 10.1+ */
+   color: black;
+   opacity: 1;
+   /* Firefox */
+}
+
+:-ms-input-placeholder {
+   /* Internet Explorer 10-11 */
+   color: black;
+}
+
+::-ms-input-placeholder {
+   /* Microsoft Edge */
+   color: black;
+}
+
+
+/* *****************************************************************
+HEADER
+***************************************************************** */
+
+nav {
+   display: flex;
+   justify-content: space-between;
+
+}
+
+a.logo {
+   width: 100px;
+}
+
+.logo {
+   padding:26px 0px 0 17px;
+}
+
+.active a {
+   display: block;
+   border: 1px solid #fff;
+   padding: 30px;
+   color: black;
+}
+
+nav {
+   padding-top: 0;
+}
+
+nav ul {
+   display: flex;
+   justify-content: end;
+   list-style: none;
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   width: 100%;
+}
+
+a {
+   text-decoration: none;
+}
+.overflow{
+   overflow: hidden;
+}
+
+.section-populaires {
+   background-color: #d3d3d3;
+}
+
+span {
+   font-weight: 600;
+}
+
+input.rechercher {
+   text-align: center;
+}
+
+form.filter1 {
+   display: flex;
+}
+
+#search {
+   padding: 7.5px;
+   font-size: 17px;
+   border: 1px solid #F2F2F2;
+   width: 15%;
+   background: white;
+}
+
+input.button {
+   padding: 7.5px;
+   font-size: 17px;
+   border: 1px solid grey;
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
+   background: #0065FC;
+   color: white;
+}
+.card-title2 h3{
+   margin:0;
+   margin-top: 10px;
+}
+
+/* *****************************************************************
+FILTRES
+***************************************************************** */
+
+button.favorite.styled {
+   padding: 0;
+   padding-right: 35px;
+   background: none;
+   margin: 0 20px;
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   border-radius: 25px;
+   height: 40px;
+}
+
+button.favorite.styled {
+   border: #F2F2F2 solid 1px;
+}
+
+i {
+   margin-top: -2px;
+}
+
+.fa {
+   color: #0065FC;
+}
+
+.etoile {
+   color: #d9d5d5;
+}
+
+i.fas.fa-money-bill-wave {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   align-content: center;
+   background: #DEEBFF;
+   transform: translateX(-3px);
+}
+
+.favorite.styled:hover {
+   background-color: rgb(241, 245, 248);
+}
+
+i.fa-solid.fa-child {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   align-content: center;
+   background: #DEEBFF;
+   transform: translateX(-3px);
+}
+
+i.fa-solid.fa-child {
+   display: inline-grid;
+   font-weight: 900;
+   color: #0065FC;
+   font-family: "Font Awesome 5 Free";
+}
+
+i.fas.fa-heart {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   align-content: center;
+   background: #DEEBFF;
+   transform: translateX(-3px);
+}
+
+i.fas.fa-dog {
+   min-width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   align-content: center;
+   background: #DEEBFF;
+   transform: translateX(-3px);
+}
+
+.fas {
+   display: inline-grid;
+   color: #0065FC;
+}
+i.fas.fa-info {
+   color: #00f;
+}
+
+i.fas.fa-info {
+   margin-top: 10px;
+   font-size: 11px;
+   border: #e3e0e0 1px solid;
+   background-color: fff;
+   border-radius: 10px;
+   height: 19px;
+}
+
+i.fas.fa-info {
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   align-content: center;
+   padding: 9px;
+   background: fff;
+}
